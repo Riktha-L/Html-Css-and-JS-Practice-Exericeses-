@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Navigation bar</title>
+  </head>
+  <body>
+    <nav class="container">
+     <ul class="nav-item">
+        <li class="txt">Home</li>
+        <li class="txt">Products</li>
+        <li class="txt">About</li>
+        <li class="txt">Blog</li>
+      </ul>
+      <ul>
+        <li class="txt1">Sign Up</li>
+      </ul>
+    </nav>
+
+    <style>
+      .nav-item{
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+      }
+      .container{
+        display: flex;
+        justify-content: space-between;
+        background-color:rgb(39, 39, 39) ;
+        color: white;
+        font-family:'Times New Roman', Times, serif;
+        font-size: small;
+      }
+      ul{
+        display: flex;
+        list-style: none;
+        padding: 10px;
+        margin: 0px;
+       
+      }
+      li{
+        cursor: pointer;
+        margin: 0 15px;
+        display: inline-block;
+      }
+      li:hover{
+        color: rgb(13, 231, 242);
+        background-color: transparent;
+      }
+      .txt1{
+        margin-left: auto;
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Card design</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-image"><img src="">
+        <span class="sale-badge">SALE</span>
+      </div>
+      <div class="card-content">
+        <h2 class="title">Product Title</h2>
+        <p class="descp">Short product description goes here</p>
+        <p class="price-container">
+          <span class="current-price">$99.99</span>
+          <span  class="original-price">$129.99</span>
+        </p>
+        <button class="addtocart">Add to Cart</button>
+      </div>
+    </div>
+  </body>
+  <style>
+    body{
+      background-color: rgb(202, 202, 202); 
+    }
+    .sale-badge{
+      position: absolute;
+      background-color: #ff4444;
+      color: white;
+      padding: 5px 8px;
+      border-radius: 4px;
+    }
+    .price-container{
+      display: flex;
+      align-items: center;
+      gap:5px;
+    }
+    .current-price{
+      font-size: large;
+      font-weight: bold;
+      color: #333;
+    }
+    .original-price{
+      color:#8c8c8c;
+      font-size: 13px;
+      text-decoration: line-through;
+    }
+    .card-image{
+      background-color: rgb(194, 194, 194);
+      width: 90%;
+      height: 200px;
+      margin: 10px;
+      margin-top: 5px;
+      position: relative;
+    }
+    .title{
+      font-size: 1.25em;
+      font-weight:600 ;
+      font-family:'Roboto', sans-serif;
+    }
+    .card {
+      width: 250px;
+      height: auto;
+      text-align: left;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+    }
+    .card-content {
+      padding: 20px;
+    }
+    .descp{
+      font-size:0.875rem;
+      font-family:'Open Sans', sans-serif;
+      font-weight: 400;
+    }
+    .amt{
+      font-size: large;
+      font-weight: bold;
+    }
+    .addtocart {
+      cursor: pointer;
+      width: 180px;
+      align-items: center;
+      background-color: rgb(59, 157, 59);
+      color: white;
+      height: 30px; 
+      border: none;
+      font-size: small;
+      border-radius: 5px;
+    }
+  </style>
+</html>

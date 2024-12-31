@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLB Nav Bar</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+      }
+
+      .nav-item,
+      .contact {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+      }
+
+      .nav-item li,
+      .contact li {
+        padding: 10px 15px;
+        cursor: pointer;
+        border-left: 0.5px solid white;
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-item li:first-child {
+        border-left: none;
+      }
+
+      li:hover {
+        background-color: grey;
+        color: black;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .logo img {
+        width: 60px;
+        height: auto;
+      }
+
+      .icons {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .icons img {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="logo.png" alt="SLB Logo">
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="nav-item">
+        <li>Home</li>
+        <li>Careers</li>
+        <li>Investors</li>
+        <li>Partners</li>
+      </ul>
+
+      <!-- Contact and Icons -->
+      <div class="icons">
+        <ul class="contact">
+          <li>Contact</li>
+        </ul>
+        <img src="search-icon.png" alt="Search Icon">
+        <img src="profile-icon.png" alt="Profile Icon">
+      </div>
+    </nav>
+  </body>
+</html>
