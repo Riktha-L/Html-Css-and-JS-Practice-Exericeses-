@@ -18,3 +18,14 @@ let employee={
   designation:"Software Engineer",
   company:"SLB",
 }
+
+let shop={
+  owner:"Riktha",
+  shopName:"Riktha Shop",
+  location:"Bangalore",
+  items:["milk","bread","eggs","butter"],
+  openTime:"9:00 AM",
+  closeTime:"9:00 PM",
+  isOpen:true
+};
+console.log(shop);
