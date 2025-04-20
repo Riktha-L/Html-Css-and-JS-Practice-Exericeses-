@@ -7,6 +7,5 @@ let user={
    // console.log(age); here this.age has to be used because age is not defined in this function
   }
 }
-user.getDetails();
-
+user.getDetails(); 
 //console.log(user); can use this to print the object
